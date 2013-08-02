@@ -67,9 +67,8 @@ to anywhere convenient.
    * vdb-save.sh 
    * vdb.sh 
 
-
-   chown root:root shutdown vdb-save.sh vdb.sh
-   chmod 700 shutdown vdb-save.sh vdb.sh
+    chown root:root shutdown vdb-save.sh vdb.sh
+    chmod 700 shutdown vdb-save.sh vdb.sh
 
 
 This optional step moves/renames the standard system shutdown script so that you are reminded to run vdb-save.sh before shutting down and vdb.sh after restart.
