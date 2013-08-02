@@ -37,11 +37,11 @@ These scripts were developed on a Ubuntu 12.04 system and use the bash shell. YM
 Please review, modify and test as required for your own requirements.
 
 ################################################### IMPORTANT ##################################################
-Scripts assume the environment variable $HOSTNAME is set.
-Scripts assume a mountpoint of /data for the volume /dev/vdb formatted in a single partition as ext4.
-Scripts assume an S3 container named $HOSTNAME_vdb will be used to save/restore the contents of /data.
-Scripts assume "swift" is installed and working (a python client for S3).
-The script /home/ubuntu/ec2keys/openrc.sh is sourced.
+ * Scripts assume the environment variable $HOSTNAME is set.
+ * Scripts assume a mountpoint of /data for the volume /dev/vdb formatted in a single partition as ext4.
+ * Scripts assume an S3 container named $HOSTNAME_vdb will be used to save/restore the contents of /data.
+ * Scripts assume "swift" is installed and working (a python client for S3).
+ * The script /home/ubuntu/ec2keys/openrc.sh is sourced.
 ################################################################################################################
 
 Consult the Nectar support site for more information on getting swift working:
@@ -57,13 +57,13 @@ git clone https://github.com/foundersandsurvivors/nectar-admutils.git
 to anywhere convenient.
 
 1. Copy the 3 scripts from the nectar-admutils repo: 
-        shutdown 
-        vdb-save.sh 
-        vdb.sh 
+   * shutdown 
+   * vdb-save.sh 
+   * vdb.sh 
    into /usr/local/sbin
    and set permissions:
-      chown root:root shutdown vdb-save.sh vdb.sh
-      chmod 700 shutdown vdb-save.sh vdb.sh
+   * chown root:root shutdown vdb-save.sh vdb.sh
+   * chmod 700 shutdown vdb-save.sh vdb.sh
 
 2. sudo mv /sbin/shutdown shutdown-kill-data-sdb
 
@@ -191,12 +191,12 @@ Follow the instructions given in the new shutdown script:
 
 Will provide these instructions:
 
-######################################################################################
-# Before shutdown please save contents of /data on /dev/vdb1
-#    SAVE: sudo /usr/local/sbin/vdb-save.sh
-#    SHUTDOWN: sudo /usr/local/sbin/shutdown-kill-data-sdb -r now
-#    RESTORE: (after restart): sudo /usr/local/sbin/vdb.sh
-######################################################################################
+    ######################################################################################
+    # Before shutdown please save contents of /data on /dev/vdb1
+    #    SAVE: sudo /usr/local/sbin/vdb-save.sh
+    #    SHUTDOWN: sudo /usr/local/sbin/shutdown-kill-data-sdb -r now
+    #    RESTORE: (after restart): sudo /usr/local/sbin/vdb.sh
+    ######################################################################################
 
 To REALLY shutdown, after you have run vdb-save.sh:
 
