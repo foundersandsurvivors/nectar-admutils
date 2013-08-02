@@ -5,7 +5,7 @@ echo "# Before shutdown please save contents of /data on /dev/vdb1"
 echo "#    SAVE: sudo /usr/local/sbin/vdb-save.sh"
 echo "#    SHUTDOWN: sudo /usr/local/sbin/shutdown-kill-data-sdb -r now"
 echo "#    RESTORE: (after restart): sudo /usr/local/sbin/vdb.sh"
-echo "#       Note: You may need to: "umount /dev/vdb" before the restore if its on /mnt.
+echo "#       Note: You may need to: "umount /dev/vdb" before the restore if its on /mnt."
 echo "######################################################################################"
 
 exit 0
