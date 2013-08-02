@@ -1,0 +1,11 @@
+#!/bin/bash
+
+echo "######################################################################################"
+echo "# Before shutdown please save contents of /data on /dev/vdb1"
+echo "#    SAVE: sudo /usr/local/sbin/vdb-save.sh"
+echo "#    SHUTDOWN: sudo /usr/local/sbin/shutdown-kill-data-sdb -r now"
+echo "#    RESTORE: (after restart): sudo /usr/local/sbin/vdb.sh"
+echo "######################################################################################"
+
+exit 0
+
