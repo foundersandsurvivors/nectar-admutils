@@ -41,10 +41,14 @@ Please review, modify and test as required for your own requirements.
  * Scripts assume a mountpoint of /data for the volume /dev/vdb formatted in a single partition as ext4.
  * Scripts assume an S3 container named $HOSTNAME_vdb will be used to save/restore the contents of /data.
  * Scripts assume "swift" is installed and working (a python client for S3).
- * The script /home/ubuntu/ec2keys/openrc.sh is sourced.
 ################################################################################################################
 
-Consult the Nectar support site for more information on getting swift working:
+The scripts:
+  * /home/ubuntu/ec2keys/openrc.sh 
+  * /home/ubuntu/ec2keys/ec2rc.sh
+are sourced. 
+
+Consult the Nectar support site for more information on these scripts and getting swift working:
  * https://support.rc.nectar.org.au/technical_guides/interfaces/python-swiftclient.html
  * https://support.rc.nectar.org.au/technical_guides/credentials_tech.html
 
