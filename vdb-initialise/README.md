@@ -66,7 +66,6 @@ to anywhere convenient.
    * shutdown 
    * vdb-save.sh 
    * vdb.sh 
-Set permissions:
 <pre>
     chown root:root shutdown vdb-save.sh vdb.sh
     chmod 700 shutdown vdb-save.sh vdb.sh
