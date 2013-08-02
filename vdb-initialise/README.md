@@ -39,6 +39,7 @@ Please review, modify and test as required for your own requirements.
 ################################################### IMPORTANT ##################################################
  * Scripts assume the environment variable $HOSTNAME is set.
  * Scripts assume a mountpoint of /data for the volume /dev/vdb formatted in a single partition as ext4.
+   * all contents will be backed up EXCEPT the directory /data/scratch
  * Scripts assume an S3 container named $HOSTNAME_vdb will be used to save/restore the contents of /data.
  * Scripts assume "swift" is installed and working (a python client for S3).
 ################################################################################################################
