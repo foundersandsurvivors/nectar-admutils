@@ -61,15 +61,16 @@ You need root access.
 git clone https://github.com/foundersandsurvivors/nectar-admutils.git
 to anywhere convenient.
 
-1. Copy the 3 scripts from the nectar-admutils repo into /usr/local/sbin and set permissions: 
+1. sudo mv /sbin/shutdown shutdown-kill-data-sdb
+2. Copy the 3 scripts from the nectar-admutils repo into /usr/local/sbin and set permissions: 
    * shutdown 
    * vdb-save.sh 
    * vdb.sh 
 
+
    chown root:root shutdown vdb-save.sh vdb.sh
    chmod 700 shutdown vdb-save.sh vdb.sh
 
-2. sudo mv /sbin/shutdown shutdown-kill-data-sdb
 
 This optional step moves/renames the standard system shutdown script so that you are reminded to run vdb-save.sh before shutting down and vdb.sh after restart.
 
