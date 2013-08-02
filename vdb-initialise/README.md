@@ -61,7 +61,7 @@ You need root access.
 git clone https://github.com/foundersandsurvivors/nectar-admutils.git
 to anywhere convenient.
 
-1. sudo mv /sbin/shutdown shutdown-kill-data-sdb
+1. sudo mv /sbin/shutdown /usr/local/sbin/shutdown-kill-data-sdb
 2. Copy the 3 scripts from the nectar-admutils repo into /usr/local/sbin and set permissions: 
    * shutdown 
    * vdb-save.sh 
@@ -86,7 +86,7 @@ On a VM which does NOT already have a second volume mounted on /dev/vdb:
 
     sudo vdb.sh
 
-Sample output of running this script on host named "smstest1". The host has just been restarted and vdb does not exist:
+Sample output of running this script on host named "smstest2". The host has just been restarted and vdb does not exist:
 
     root@smstest2: ~ # df -k
     Filesystem     1K-blocks    Used Available Use% Mounted on
