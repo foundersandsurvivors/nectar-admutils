@@ -68,7 +68,7 @@ to anywhere convenient.
    * vdb.sh 
 <pre>
     chown root:root shutdown vdb-save.sh vdb.sh
-    chmod 700 shutdown vdb-save.sh vdb.sh
+    chmod 744 shutdown vdb-save.sh vdb.sh
 </pre>
 
 
